@@ -14,10 +14,12 @@
     <div class="container">
       <form action="/action_page.php">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."
+        required>
     
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."
+        required>
 
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -273,6 +275,13 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
          </select>
+
+        <label for="exampleInputPhone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp"
+         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+         required>
+         <div id="phoneHelp" class="form-text">Format: 123-456-7890</div>
+    
     
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>

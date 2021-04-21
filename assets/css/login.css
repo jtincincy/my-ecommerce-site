@@ -44,8 +44,8 @@ form {
   
   /* Avatar image */
   img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    width: 25%;
+    border-radius: 35%;
   }
   
   /* Add padding to containers */
