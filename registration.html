@@ -50,7 +50,7 @@
   <div class="container">
     <form action="/action_page.php">
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
 
       <label for="lname">Last Name</label>
       <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
@@ -62,7 +62,7 @@
       <input type="text" id="city" name="cityaddress" placeholder="Your city.." required>
 
       <label for="state">State</label>
-      <select id="state" name="state">
+      <select id="state" name="state" required>
         <option value="--">--</option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
@@ -117,10 +117,10 @@
       </select>
 
       <label for="mailzip">Zip Code</label>
-      <input type="text" id="mailzip" name="mailzipcode" placeholder="Your zip code..">
+      <input type="text" id="mailzip" name="mailzipcode" placeholder="Your zip code.." required>
 
       <label for="country">Country</label>
-      <select id="country" name="country">
+      <select id="country" name="country" required>
         <option value="United States of America">United States of America</option>
         <option value="Afganistan">Afghanistan</option>
         <option value="Albania">Albania</option>
@@ -371,8 +371,8 @@
       </select>
 
       <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else. Your email address will be your login id.</div>
 
       <label for="exampleInputPhone" class="form-label">Phone Number</label>
       <input type="tel" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp"
